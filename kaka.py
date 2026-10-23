@@ -63,3 +63,4 @@ while True:
   #clear_output(wait=True)
   printgrid(grid)
   time.sleep(0.2)
+  input()
