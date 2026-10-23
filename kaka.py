@@ -43,7 +43,7 @@ def step(gridn):
       if gridn[i,j]==1 and nnbrs in (2,3):
         ngrid[i,j]=1
   return ngrid
-  def printgrid(gridik):
+def printgrid(gridik):
   tmpgrid=gridik.astype(str)
   tmpgrid[tmpgrid=='0']='⬛'
   tmpgrid[tmpgrid=='1']='🟩'
@@ -51,7 +51,7 @@ def step(gridn):
   s='\n'.join([''.join(tmpgrid[i]) for i in range(tmpgrid.shape[0])])
   print(s)
   return None
-  from IPython.core.display import clear_output
+#from IPython.core.display import clear_output
 np.random.seed(0)
 n,m=map(int, input().split())
 p=float(input())
@@ -60,6 +60,6 @@ printgrid(grid)
 clear_output(wait=True)
 while True:
   grid=step(grid)
-  clear_output(wait=True)
+  #clear_output(wait=True)
   printgrid(grid)
   time.sleep(0.2)
