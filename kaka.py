@@ -57,7 +57,7 @@ n,m=map(int, input().split())
 p=float(input())
 grid=gen_grid(n,m,p)
 printgrid(grid)
-clear_output(wait=True)
+#clear_output(wait=True)
 while True:
   grid=step(grid)
   #clear_output(wait=True)
